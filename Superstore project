@@ -1,0 +1,18 @@
+Superstore table
+#1 Write a SQL query that orders the items by price.
+SELECT item_name, price
+FROM superstore
+ORDER BY price desc;
+
+#2 Statistic of item price
+select sum(price)
+from superstore;
+
+#3 Statistic from kitchen supplies
+select count(price),'Kitchen Supplies'
+from superstore;
+
+#4 How many air purifiers in stock?
+SELECT COUNT(*)
+FROM Superstore
+WHERE category = 'Air Purifier';
